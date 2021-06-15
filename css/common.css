@@ -1,0 +1,587 @@
+@charset 'utf-8';
+/* 基本設定、リンクカラーなど
+----------------------------------------------------*/
+
+html
+{
+    overflow-y: scroll;
+}
+
+body
+{
+    font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',"游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;    font-size: 14px;
+    line-height: 1.8;
+
+    margin: 0;
+    padding: 0;
+
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-size: 1.0em;
+    font-weight: normal;
+
+    clear: both;
+
+    margin: 0;
+    padding: 0;
+}
+
+div,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+blockquote,
+table,
+th,
+td,
+ul,
+ol,
+li,
+form,
+code
+{
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li
+{
+    list-style: none;
+}
+
+br
+{
+    letter-spacing: 0;
+}
+
+table,
+th,
+td,
+input,
+select,
+textarea
+{
+    font-size: 14px;
+
+    color: #5a5a5a;
+}
+
+table th
+{
+    text-align: left;
+}
+
+p
+{
+    font-size: 14px;
+}
+
+img
+{
+    vertical-align: bottom;
+    width: 100%;
+    height:auto;
+
+    border: none;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+sup
+{
+    color: #900;
+}
+
+/* png透過用
+----------------------------------------------------*/
+.png
+{
+    behavior: expression(IEPNGFIX.fix(this));
+}
+
+/* リンク設定
+----------------------------------------------------*/
+a
+{
+    text-decoration: none;
+
+    color: #333;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    opacity: 0.6;
+}
+
+/* ------------------------
+clearfix
+------------------------ */
+.clearfix:after
+{
+    display: block;
+    clear: both;
+
+    content: '';
+}
+
+.clearfix
+{
+    display: inline-block;
+}
+
+.clearfix
+{
+    display: block;
+}
+
+
+
+/* 調整スタイル !important
+------------------------------ */
+
+.left
+{
+    text-align: left;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.floatL
+{
+    float: left;
+    width: 600px;
+}
+
+.floatR
+{
+    float: right;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/* ------------------------
+common
+------------------------ */
+.rollOver a img
+{
+    zoom: 1;
+
+    opacity: 1.00; /* Standard: FF gt 1.5, Opera, Safari */
+
+    filter: alpha(opacity=100); /* IE lt 8 */
+    -ms-filter: 'alpha(opacity=100)'; /* IE 8 */
+    -khtml-opacity: 1.00; /* Safari 1.x */
+    -moz-opacity: 1.00; /* FF lt 1.5, Netscape */
+}
+
+.rollOver a:hover img
+{
+    zoom: 1;
+
+    opacity: .70; /* Standard: FF gt 1.5, Opera, Safari */
+
+    filter: alpha(opacity=70); /* IE lt 8 */
+    -ms-filter: 'alpha(opacity=70)'; /* IE 8 */
+    -khtml-opacity: .70; /* Safari 1.x */
+    -moz-opacity: .70; /* FF lt 1.5, Netscape */
+}
+
+.mt5
+{
+    margin-top: 5px!important;
+}
+
+.mt10
+{
+    margin-top: 10px!important;
+}
+
+.mt15
+{
+    margin-top: 15px!important;
+}
+
+.mt20
+{
+    margin-top: 20px!important;
+}
+
+.mt30
+{
+    margin-top: 30px!important;
+}
+
+.mb1
+{
+    margin-bottom: 1px!important;
+}
+
+.mb5
+{
+    margin-bottom: 5px!important;
+}
+
+.mb10
+{
+    margin-bottom: 10px!important;
+}
+
+.mb15
+{
+    margin-bottom: 15px!important;
+}
+
+.mb20
+{
+    margin-bottom: 20px!important;
+}
+
+.mb30
+{
+    margin-bottom: 30px!important;
+}
+
+.mb50
+{
+    margin-bottom: 50px!important;
+}
+
+.mb80
+{
+    margin-bottom: 80px!important;
+}
+
+.ml10
+{
+    margin-left: 10px!important;
+}
+
+.ml20
+{
+    margin-left: 20px!important;
+}
+
+.ml30
+{
+    margin-left: 30px!important;
+}
+
+.mr10
+{
+    margin-right: 10px!important;
+}
+
+.mr20
+{
+    margin-right: 20px!important;
+}
+
+.mr30
+{
+    margin-right: 30px!important;
+}
+
+.mr40
+{
+    margin-right: 40px!important;
+}
+
+.pb20
+{
+    padding-bottom: 20px!important;
+}
+
+
+.pr56
+{
+    padding-right: 56px!important;
+}
+
+
+.bold
+{
+    font-weight: bold!important;
+}
+
+.fs24
+{
+    font-size: 24px!important;
+}
+
+
+
+.fs34
+{
+    font-size: 34px!important;
+}
+
+.fs48
+{
+    font-size: 48px!important;
+}
+.fs14
+{
+    font-size: 14px!important;
+}
+
+.fs16
+{
+    font-size: 16px!important;
+}
+
+.lh120
+{
+    line-height: 1.2;
+}
+
+.lh140
+{
+    line-height: 1.4;
+}
+
+.mincho{
+    font-family: '小塚明朝 Pro L','Kozuka mincho Pro Light',"ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    font-weight: 100;
+}
+/* 汎用class
+----------------------------------------------------*/
+
+.textC1
+{
+    color: #c00!important;
+}
+
+.textC2
+{
+    color: #666!important;
+}
+
+.textC3
+{
+    color: #f00!important;
+}
+
+.textS1
+{
+    font-size: 11px!important;
+}
+
+
+.left
+{
+    text-align: left!important;
+}
+
+.center
+{
+    text-align: center!important;
+}
+
+.right
+{
+    text-align: right!important;
+}
+
+.fl
+{
+    float: left!important;
+}
+
+.fr
+{
+    float: right!important;
+}
+
+/* 共通レイアウト
+----------------------------------------------------*/
+
+.col2 .boxL
+{
+    float: left;
+}
+
+.col2 .boxR
+{
+    float: right;
+}
+
+
+.col3 .boxL
+{
+    float: left;
+}
+
+.col3 .boxC
+{
+    float: left;
+}
+
+.col3 .boxR
+{
+    float: right;
+}
+
+/*  imgfloat
+------------------------------ */
+.imgR
+{
+    float: right;
+
+    margin: 0 0 10px 10px;
+}
+
+.imgL
+{
+    float: left;
+
+    margin: 0 10px 10px 0;
+}
+
+/*  table style
+------------------------------ */
+.tableBase
+{
+    width: 100%;
+
+    border: 1px solid #999;
+}
+
+.tableBase th
+{
+    width: 1%;
+    padding: 10px;
+
+    white-space: nowrap;
+
+    border: 1px solid #999;
+    background: #f4e2d8;
+}
+
+.tableBase td
+{
+    padding: 10px;
+
+    border: 1px solid #999;
+    background: #fff;
+}
+
+.tableBase .odd td
+{
+    background-color: #ece7e3;
+}
+
+.tableBase td strong
+{
+    font-size: 30px;
+
+    color: #df5a2b;
+}
+
+.tableBase .bgStyle1
+{
+    background: #fff;
+}
+
+.tableLine
+{
+    width: 100%;
+}
+
+.tableLine th
+{
+    width: 1%;
+    padding: 3px 10px 3px 5px;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #999;
+}
+
+.tableLine td
+{
+    padding: 3px 5px;
+
+    border-bottom: 1px solid #999;
+}
+
+.tableLine .bgStyle1
+{
+    background: #fff;
+}
+
+
+
+/* WP調整(画像回り込み)
+----------------------------------------------------*/
+img.centered
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img.alignright
+{
+    display: inline;
+
+    margin: 0 0 2px 7px;
+    padding: 0;
+}
+
+img.alignleft
+{
+    display: inline;
+
+    margin: 0 7px 2px 0;
+    padding: 0;
+}
+
+.alignright
+{
+    float: right;
+}
+
+.alignleft
+{
+    float: left;
+}
